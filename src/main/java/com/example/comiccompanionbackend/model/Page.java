@@ -17,4 +17,37 @@ public class Page {
 
     @Column
     private String pageNumber;
+
+    public Page() {
+    }
+
+    public Page(Long id, URL url, String pageNumber) {
+        this.id = id;
+        this.url = url;
+        this.pageNumber = pageNumber;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public URL getUrl() {
+        return url;
+    }
+
+    public void setUrl(URL url) {
+        this.url = url;
+    }
+
+    public String getPageNumber() {
+        return pageNumber;
+    }
+
+    public void setPageNumber(String pageNumber) {
+        this.pageNumber = pageNumber;
+    }
 }

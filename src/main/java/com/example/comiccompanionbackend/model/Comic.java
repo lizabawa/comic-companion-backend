@@ -16,6 +16,9 @@ public class Comic {
     @Column
     private String description;
 
+    public Comic() {
+    }
+
     public Comic(Long id, String title, String description) {
         this.id = id;
         this.title = title;
