@@ -57,4 +57,14 @@ public class Page {
     public void setPageNumber(String pageNumber) {
         this.pageNumber = pageNumber;
     }
+
+    @Override
+    public String toString() {
+        return "Page{" +
+                "id=" + id +
+                ", url=" + url +
+                ", pageNumber='" + pageNumber + '\'' +
+                ", comic=" + comic +
+                '}';
+    }
 }

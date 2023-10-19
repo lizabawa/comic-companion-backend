@@ -56,4 +56,14 @@ public class Comic {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    @Override
+    public String toString() {
+        return "Comic{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", page=" + page +
+                '}';
+    }
 }
