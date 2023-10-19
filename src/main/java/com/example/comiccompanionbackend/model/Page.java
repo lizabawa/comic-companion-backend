@@ -1,5 +1,7 @@
 package com.example.comiccompanionbackend.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.net.URL;
 
@@ -17,6 +19,11 @@ public class Page {
 
     @Column
     private String pageNumber;
+
+    @ManyToOne
+    @JsonIgnore
+    @JoinColumn(name = "comic_id")
+    private Comic comic;
 
     public Page() {
     }

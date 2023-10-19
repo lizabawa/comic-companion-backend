@@ -1,6 +1,10 @@
 package com.example.comiccompanionbackend.model;
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "comics")
@@ -15,6 +19,10 @@ public class Comic {
 
     @Column
     private String description;
+
+    @OneToMany
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<Page> page;
 
     public Comic() {
     }
