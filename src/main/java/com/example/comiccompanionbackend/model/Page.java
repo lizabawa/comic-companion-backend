@@ -1,6 +1,7 @@
 package com.example.comiccompanionbackend.model;
 
 import javax.persistence.*;
+import java.net.URL;
 
 @Entity
 @Table(name = "pages")
@@ -12,8 +13,8 @@ public class Page {
     private Long id;
 
     @Column
-    private String title;
+    private URL url;
 
     @Column
-    private String description;
+    private String pageNumber;
 }
