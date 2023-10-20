@@ -1,13 +1,16 @@
 package com.example.comiccompanionbackend.controller;
 
+import com.example.comiccompanionbackend.exception.InformationNotFoundException;
 import com.example.comiccompanionbackend.model.Comic;
 import com.example.comiccompanionbackend.service.ComicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.logging.Logger;
 
 @RestController
@@ -30,5 +33,10 @@ public class ComicController {
     @GetMapping(path = "")
     public List<Comic> getAllComics() {
         return comicService.getAllComics();
+    }
+
+    @GetMapping(path = "{comicId}")
+    public Optional<Comic> getComic(@PathVariable(value = "comicId") Long comicId) throws Exception {
+        return comicService.getComic(comicId);
     }
 }
