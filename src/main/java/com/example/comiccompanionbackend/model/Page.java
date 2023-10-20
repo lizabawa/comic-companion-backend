@@ -58,6 +58,14 @@ public class Page {
         this.pageNumber = pageNumber;
     }
 
+    public Comic getComic() {
+        return comic;
+    }
+
+    public void setComic(Comic comic) {
+        this.comic = comic;
+    }
+
     @Override
     public String toString() {
         return "Page{" +

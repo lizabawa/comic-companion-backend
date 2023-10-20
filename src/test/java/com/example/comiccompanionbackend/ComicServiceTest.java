@@ -80,4 +80,15 @@ public class ComicServiceTest {
         assertTrue(result.isPresent());
         assertEquals(comic1, result.get());
     }
+
+    @Test
+    public void testGetAllPages() {
+        Long comicId = 1L;
+        Comic comic1 = new Comic(1L, "Comic 1", "Comic 1 Description");
+        Page c1pg1 = new Page(1L, "mech-bros-images/Noxcomic_pg01_02.png", 1);
+        Page c1pg2 = new Page(2L, "mech-bros-images/Noxcomic_pg02_02.png", 2);
+        Page c1pg3 = new Page(3L, "mech-bros-images/Noxcomic_pg03_05.png", 3);
+
+        Mockito.when(pageRepository.findAllByComicId(comicId)).thenReturn(List.of());
+    }
 }
