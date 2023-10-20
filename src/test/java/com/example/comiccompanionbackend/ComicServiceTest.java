@@ -58,9 +58,12 @@ public class ComicServiceTest {
 
     @Test
     public void testGetAllComics() {
+        Comic comic1 = new Comic(1L, "Comic 1", "Comic 1 Description");
+        Comic comic2 = new Comic(2L, "Comic 2", "Comic 2 Description");
+        Comic comic3 = new Comic(3L, "Comic 3", "Comic 3 Description");
         List<Comic> expected = List.of(comic1, comic2, comic3);
-        Mockito.when(comicRepository.getAllComics).thenReturn(expected);
-        String result = comicRepository.getAllComics();
+        Mockito.when(comicService.getAllComics()).thenReturn(expected);
+        List<Comic> result = comicService.getAllComics();
         assertEquals(expected, result);
     }
 }
