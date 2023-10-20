@@ -27,7 +27,21 @@ public class SeedData implements CommandLineRunner {
         mechBros.setDescription("MechBros description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, mollitia. Neque quibusdam impedit corrupti perferendis! Voluptatum accusamus rerum adipisci ea excepturi inventore, vel magni porro blanditiis consectetur debitis fugit molestias!");
         comicRepository.save(mechBros);
 
+        Page mbpg1 = new Page();
+        mbpg1.setPageNumber(1);
+        mbpg1.setUrl("mech-bros-images/Noxcomic_pg01_02.png");
 
+        Page mbpg2 = new Page();
+        mbpg1.setPageNumber(2);
+        mbpg1.setUrl("mech-bros-images/Noxcomic_pg02_02.png");
+
+        Page mbpg3 = new Page();
+        mbpg1.setPageNumber(3);
+        mbpg1.setUrl("mech-bros-images/Noxcomic_pg03_05.png");
+
+        Page mbpg4 = new Page();
+        mbpg1.setPageNumber(4);
+        mbpg1.setUrl("mech-bros-images/Noxcomic_pg04_05.png");
 
         //RED RANGER
         Comic redRanger = new Comic();
