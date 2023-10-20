@@ -95,5 +95,20 @@ public class SeedData implements CommandLineRunner {
         twoSisters.setDescription("MechBros description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, mollitia. Neque quibusdam impedit corrupti perferendis! Voluptatum accusamus rerum adipisci ea excepturi inventore, vel magni porro blanditiis consectetur debitis fugit molestias!");
         comicRepository.save(twoSisters);
 
+        Page tspg1 = new Page();
+        tspg1.setPageNumber(1);
+        tspg1.setUrl("two-sisters-images/Renowned_p01_01.png");
+
+        Page tspg2 = new Page();
+        tspg1.setPageNumber(2);
+        tspg1.setUrl("two-sisters-images/Renowned_p02_01.png");
+
+        Page tspg3 = new Page();
+        tspg1.setPageNumber(3);
+        tspg1.setUrl("two-sisters-images/Renowned_p03_06.png");
+
+        Page tspg4 = new Page();
+        tspg1.setPageNumber(4);
+        tspg1.setUrl("two-sisters-images/Renowned_p04_04.png");
     }
 }
