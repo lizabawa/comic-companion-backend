@@ -15,7 +15,7 @@ public class ComicService {
     Logger log = Logger.getLogger(ComicService.class.getName());
 
     @Autowired
-    public void setComicRepository(ComicRepository comicRepository) {
+    public void setComicRepository( ComicRepository comicRepository) {
         this.comicRepository = comicRepository;
     }
 
