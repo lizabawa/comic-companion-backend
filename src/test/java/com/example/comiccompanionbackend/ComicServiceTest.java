@@ -66,4 +66,12 @@ public class ComicServiceTest {
         List<Comic> result = comicService.getAllComics();
         assertEquals(expected, result);
     }
+
+    @Test
+    public void testGetComic(Comic comicId) {
+        Comic comic1 = new Comic(1L, "Comic 1", "Comic 1 Description");
+        Mockito.when(comicService.getComic(1L)).thenReturn(comic1);
+        String result = comicService.getComic();
+        assertEquals(comic1, result);
+    }
 }
