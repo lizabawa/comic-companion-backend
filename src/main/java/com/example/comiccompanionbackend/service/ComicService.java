@@ -30,4 +30,7 @@ public class ComicService {
         return "Hello World";
     }
 
+    public List<Comic> getAllComics() {
+        return comicRepository.findAll();
+    }
 }

@@ -26,4 +26,9 @@ public class ComicController {
     public String getHelloWorld() {
         return comicService.getHelloWorld();
     };
+
+    @GetMapping(path = "")
+    public List<Comic> getAllComics() {
+        return comicService.getAllComics();
+    }
 }
