@@ -24,7 +24,7 @@ public class SeedData implements CommandLineRunner {
         //MECH BROS
         Comic mechBros = new Comic();
         mechBros.setTitle("Mech Bros");
-        mechBros.setDescription("MechBros description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, mollitia. Neque quibusdam impedit corrupti perferendis! Voluptatum accusamus rerum adipisci ea excepturi inventore, vel magni porro blanditiis consectetur debitis fugit molestias!");
+        mechBros.setDescription("MechBros description Lorem ipsum dolor sit amet");
         comicRepository.save(mechBros);
 
         Page mbpg1 = new Page();
@@ -46,7 +46,7 @@ public class SeedData implements CommandLineRunner {
         //RED RANGER
         Comic redRanger = new Comic();
         redRanger.setTitle("Red Ranger");
-        redRanger.setDescription("Red Ranger description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, mollitia. Neque quibusdam impedit corrupti perferendis! Voluptatum accusamus rerum adipisci ea excepturi inventore, vel magni porro blanditiis consectetur debitis fugit molestias!");
+        redRanger.setDescription("Red Ranger description Lorem ipsum dolor");
         comicRepository.save(redRanger);
 
         Page rrpg1 = new Page();
@@ -92,7 +92,7 @@ public class SeedData implements CommandLineRunner {
         //TWO SISTERS
         Comic twoSisters = new Comic();
         twoSisters.setTitle("The Tale of Two Sisters");
-        twoSisters.setDescription("MechBros description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, mollitia. Neque quibusdam impedit corrupti perferendis! Voluptatum accusamus rerum adipisci ea excepturi inventore, vel magni porro blanditiis consectetur debitis fugit molestias!");
+        twoSisters.setDescription("MechBros description Lorem ipsum dolor sit amet");
         comicRepository.save(twoSisters);
 
         Page tspg1 = new Page();

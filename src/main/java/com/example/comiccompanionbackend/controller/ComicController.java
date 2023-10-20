@@ -2,6 +2,7 @@ package com.example.comiccompanionbackend.controller;
 
 import com.example.comiccompanionbackend.service.ComicService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,4 +19,9 @@ public class ComicController {
     public void setComicService(ComicService comicService) {
         this.comicService = comicService;
     }
+
+    @GetMapping(path = "/helloworld")
+    public String getHelloWorld() {
+        return comicService.getHelloWorld();
+    };
 }

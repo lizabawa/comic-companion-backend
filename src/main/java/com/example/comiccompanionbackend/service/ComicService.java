@@ -23,4 +23,8 @@ public class ComicService {
     public ComicService(PageRepository pageRepository) {
         this.pageRepository = pageRepository;
     }
+
+    public String getHelloWorld() {
+        return "Hello World";
+    }
 }
