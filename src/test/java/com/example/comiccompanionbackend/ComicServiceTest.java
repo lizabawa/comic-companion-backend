@@ -3,24 +3,31 @@ package com.example.comiccompanionbackend;
 import com.example.comiccompanionbackend.controller.ComicController;
 import com.example.comiccompanionbackend.model.Comic;
 import com.example.comiccompanionbackend.model.Page;
+import com.example.comiccompanionbackend.repository.ComicRepository;
+import com.example.comiccompanionbackend.repository.PageRepository;
 import com.example.comiccompanionbackend.service.ComicService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.web.servlet.MockMvc;
 
-@RunWith(MockitoJUnitRunner.class)
+@ExtendWith(MockitoExtension.class)
 public class ComicServiceTest {
+    @InjectMocks
+    private ComicService comicService;
 
-    @Autowired
-    private MockMvc mockMvc;
+    @Mock
+    private ComicRepository comicRepository;
 
-
-    @MockBean
-    private ComicController comicController;
+    @Mock
+    private PageRepository pageRepository;
 
     @BeforeEach
     public void createComic(){
