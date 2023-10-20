@@ -27,6 +27,8 @@ public class SeedData implements CommandLineRunner {
         mechBros.setDescription("MechBros description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, mollitia. Neque quibusdam impedit corrupti perferendis! Voluptatum accusamus rerum adipisci ea excepturi inventore, vel magni porro blanditiis consectetur debitis fugit molestias!");
         comicRepository.save(mechBros);
 
+
+
         //RED RANGER
         Comic redRanger = new Comic();
         redRanger.setTitle("Red Ranger");
@@ -36,34 +38,42 @@ public class SeedData implements CommandLineRunner {
         Page rrpg1 = new Page();
         rrpg1.setPageNumber(1);
         rrpg1.setUrl("red-ranger-images/RedRanger_comic_001.png");
+        pageRepository.save(rrpg1);
 
         Page rrpg2 = new Page();
         rrpg1.setPageNumber(2);
         rrpg1.setUrl("red-ranger-images/RedRanger_comic_002.png");
+        pageRepository.save(rrpg2);
 
         Page rrpg3 = new Page();
         rrpg1.setPageNumber(3);
         rrpg1.setUrl("red-ranger-images/RedRanger_comic_003.png");
+        pageRepository.save(rrpg3);
 
         Page rrpg4 = new Page();
         rrpg1.setPageNumber(4);
         rrpg1.setUrl("red-ranger-images/RedRanger_comic_004.png");
+        pageRepository.save(rrpg4);
 
         Page rrpg5 = new Page();
         rrpg1.setPageNumber(5);
         rrpg1.setUrl("red-ranger-images/RedRanger_comic_005.png");
+        pageRepository.save(rrpg5);
 
         Page rrpg6 = new Page();
         rrpg1.setPageNumber(6);
         rrpg1.setUrl("red-ranger-images/RedRanger_comic_006.png");
+        pageRepository.save(rrpg6);
 
         Page rrpg7 = new Page();
         rrpg1.setPageNumber(7);
         rrpg1.setUrl("red-ranger-images/RedRanger_comic_007.png");
+        pageRepository.save(rrpg7);
 
         Page rrpg8 = new Page();
         rrpg1.setPageNumber(8);
         rrpg1.setUrl("red-ranger-images/RedRanger_comic_008.png");
+        pageRepository.save(rrpg8);
 
         //TWO SISTERS
         Comic twoSisters = new Comic();
