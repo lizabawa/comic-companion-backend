@@ -1,10 +1,12 @@
 package com.example.comiccompanionbackend.service;
 
+import com.example.comiccompanionbackend.model.Comic;
 import com.example.comiccompanionbackend.repository.ComicRepository;
 import com.example.comiccompanionbackend.repository.PageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.logging.Logger;
 
 @Service
@@ -27,4 +29,5 @@ public class ComicService {
     public String getHelloWorld() {
         return "Hello World";
     }
+
 }
