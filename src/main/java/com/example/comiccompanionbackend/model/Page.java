@@ -15,10 +15,10 @@ public class Page {
     private Long id;
 
     @Column
-    private URL url;
+    private String url;
 
     @Column
-    private String pageNumber;
+    private int pageNumber;
 
     @ManyToOne
     @JsonIgnore
@@ -28,7 +28,7 @@ public class Page {
     public Page() {
     }
 
-    public Page(Long id, URL url, String pageNumber) {
+    public Page(Long id, String url, int pageNumber) {
         this.id = id;
         this.url = url;
         this.pageNumber = pageNumber;
@@ -42,19 +42,19 @@ public class Page {
         this.id = id;
     }
 
-    public URL getUrl() {
+    public String getUrl() {
         return url;
     }
 
-    public void setUrl(URL url) {
+    public void setUrl(String url) {
         this.url = url;
     }
 
-    public String getPageNumber() {
+    public int getPageNumber() {
         return pageNumber;
     }
 
-    public void setPageNumber(String pageNumber) {
+    public void setPageNumber(int pageNumber) {
         this.pageNumber = pageNumber;
     }
 
