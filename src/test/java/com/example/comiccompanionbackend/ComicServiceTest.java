@@ -4,26 +4,37 @@ import com.example.comiccompanionbackend.controller.ComicController;
 import com.example.comiccompanionbackend.model.Comic;
 import com.example.comiccompanionbackend.model.Page;
 import com.example.comiccompanionbackend.service.ComicService;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.web.servlet.MockMvc;
 
-@WebMvcTest(ComicService.class)
+@RunWith(MockitoJUnitRunner.class)
 public class ComicServiceTest {
 
     @Autowired
     private MockMvc mockMvc;
 
+
     @MockBean
     private ComicController comicController;
 
-    Comic comic1 = new Comic(1L, "Comic 1", "Comic 1 Description");
-    Comic comic2 = new Comic(2L, "Comic 2", "Comic 2 Description");
-    Comic comic3 = new Comic(3L, "Comic 3", "Comic 3 Description");
+    @BeforeEach
+    public void createComic(){
+        Comic comic1 = new Comic(1L, "Comic 1", "Comic 1 Description");
+        Comic comic2 = new Comic(2L, "Comic 2", "Comic 2 Description");
+        Comic comic3 = new Comic(3L, "Comic 3", "Comic 3 Description");
 
-    Page c1pg1 = new Page(1L, "mech-bros-images/Noxcomic_pg01_02.png", 1);
-    Page c1pg2 = new Page(2L, "mech-bros-images/Noxcomic_pg02_02.png", 2);
-    Page c1pg3 = new Page(3L, "mech-bros-images/Noxcomic_pg03_05.png", 3);
+        Page c1pg1 = new Page(1L, "mech-bros-images/Noxcomic_pg01_02.png", 1);
+        Page c1pg2 = new Page(2L, "mech-bros-images/Noxcomic_pg02_02.png", 2);
+        Page c1pg3 = new Page(3L, "mech-bros-images/Noxcomic_pg03_05.png", 3);
+    }
 
+    @Test
+    public void shouldReturnHelloWorld_success() throws Exception {
+
+    }
 }
