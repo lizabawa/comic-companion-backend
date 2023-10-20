@@ -57,6 +57,14 @@ public class Comic {
         this.description = description;
     }
 
+    public List<Page> getPage() {
+        return page;
+    }
+
+    public void setPage(List<Page> page) {
+        this.page = page;
+    }
+
     @Override
     public String toString() {
         return "Comic{" +

@@ -86,9 +86,16 @@ public class ComicServiceTest {
         Long comicId = 1L;
         Comic comic1 = new Comic(1L, "Comic 1", "Comic 1 Description");
         Page c1pg1 = new Page(1L, "mech-bros-images/Noxcomic_pg01_02.png", 1);
+        c1pg1.setComic(comic1);
         Page c1pg2 = new Page(2L, "mech-bros-images/Noxcomic_pg02_02.png", 2);
+        c1pg2.setComic(comic1);
         Page c1pg3 = new Page(3L, "mech-bros-images/Noxcomic_pg03_05.png", 3);
+        c1pg3.setComic(comic1);
 
-        Mockito.when(pageRepository.findAllByComicId(comicId)).thenReturn(List.of());
+        List<Page> expected = List.of(c1pg1, c1pg2, c1pg3);
+
+        Mockito.when(pageRepository.findAllByComicId(comicId)).thenReturn(expected);
+        List<Page> result = pageRepository.findAllByComicId(comicId);
+        assertEquals(expected, result);
     }
 }
