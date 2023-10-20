@@ -94,5 +94,6 @@ public class SeedData implements CommandLineRunner {
         twoSisters.setTitle("The Tale of Two Sisters");
         twoSisters.setDescription("MechBros description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, mollitia. Neque quibusdam impedit corrupti perferendis! Voluptatum accusamus rerum adipisci ea excepturi inventore, vel magni porro blanditiis consectetur debitis fugit molestias!");
         comicRepository.save(twoSisters);
+
     }
 }
