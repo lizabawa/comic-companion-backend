@@ -10,5 +10,4 @@ import java.util.List;
 public interface PageRepository extends JpaRepository<Page, Long> {
     List<Page> findAllByComicId(Long comicId);
     Page findByComicIdAndId(Long comicId, Long pageId);
-    Page findByComicIdAndPageNumber(Long comicId, int pageNumber);
 }
