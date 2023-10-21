@@ -39,7 +39,7 @@ public class ComicController {
     }
 
     @GetMapping(path = "/{comicId}")
-    public Optional<Comic> getComic(@PathVariable(value = "comicId") Long comicId) {
+    public Comic getComic(@PathVariable(value = "comicId") Long comicId) {
         return comicService.getComic(comicId);
     }
 

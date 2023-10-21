@@ -37,13 +37,9 @@ public class ComicService {
         return comicRepository.findAll();
     }
 
-    public Optional<Comic> getComic(Long comicId) {
-        Optional<Comic> comicOptional = comicRepository.findById(comicId);
-        if(comicOptional.isPresent()){
-            return comicRepository.findById(comicId);
-        } else {
-            throw new InformationNotFoundException("Error: Comic with Id " + comicId + " does not exist.");
-        }
+    public Comic getComic(Long comicId) {
+            return comicRepository.findById(comicId)
+                    .orElseThrow(() -> new InformationNotFoundException("Error: Comic with Id " + comicId + " does not exist."));
     }
 
     public List<Page> getComicPages(Long comicId) {
