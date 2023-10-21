@@ -89,4 +89,17 @@ public class ComicControllerTest {
                 .andExpect(jsonPath("$.message").value("success"))
                 .andDo(print());
     }
+
+    @Test
+    public void getComicPage_success() throws Exception {
+        when(comicService.getComicPage(comic1.getId(), c1pg1.getId())).thenReturn(c1pg1);
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/comics/{comicId}/pages/{pageId}", "1", "1")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.data.id").value(c1pg1.getId()))
+                .andExpect(jsonPath("$.data.pageNumber").value(c1pg1.getPageNumber()))
+                .andExpect(jsonPath("$.data.url").value(c1pg1.getUrl()))
+                .andExpect(jsonPath("$.message").value("success"))
+                .andDo(print());
+    }
 }
