@@ -64,8 +64,16 @@ public class ComicController {
     }
 
     @GetMapping(path = "/{comicId}/pages")
-    public List<Page> getComicPages(@PathVariable(value = "comicId") Long comicId) {
-        return comicService.getComicPages(comicId);
+    public ResponseEntity<?> getComicPages(@PathVariable(value = "comicId") Long comicId) {
+        List<Page> pagesList = comicService.getComicPages(comicId);
+        if (pagesList.isEmpty()){
+            message.put("message", "cannot find any pages for comic id: " + comicId);
+            return new ResponseEntity<>(message, HttpStatus.NOT_FOUND);
+        } else {
+            message.put("message", "success");
+            message.put("data", pagesList);
+            return new ResponseEntity<>(message, HttpStatus.OK);
+        }
     }
 
     @GetMapping(path = "/{comicId}/pages/{pageId}")
