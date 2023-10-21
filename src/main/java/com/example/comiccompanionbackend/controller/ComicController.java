@@ -47,4 +47,9 @@ public class ComicController {
     public List<Page> getComicPages(@PathVariable(value = "comicId") Long comicId) {
         return comicService.getComicPages(comicId);
     }
+
+    @GetMapping(path = "/{comicId}/pages/{pageId}")
+    public Page getComicPage(@PathVariable(value = "comicId") Long comicId, @PathVariable(value = "pageId") Long pageId) {
+        return comicService.getComicPage(comicId, pageId);
+    }
 }
