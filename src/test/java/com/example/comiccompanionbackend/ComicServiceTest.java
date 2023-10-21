@@ -20,6 +20,7 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.Mockito.verifyNoMoreInteractions;
 
 @ExtendWith(MockitoExtension.class)
 public class ComicServiceTest {
@@ -68,6 +69,7 @@ public class ComicServiceTest {
         Mockito.when(comicRepository.findAll()).thenReturn(expected);
         List<Comic> result = comicRepository.findAll();
         assertEquals(expected, result);
+        verifyNoMoreInteractions(comicRepository);
     }
 
     @Test
@@ -79,6 +81,7 @@ public class ComicServiceTest {
         Optional<Comic> result = comicRepository.findById(comicId);
         assertTrue(result.isPresent());
         assertEquals(comic1, result.get());
+        verifyNoMoreInteractions(comicRepository);
     }
 
     @Test
@@ -97,5 +100,20 @@ public class ComicServiceTest {
         Mockito.when(pageRepository.findAllByComicId(comicId)).thenReturn(expected);
         List<Page> result = pageRepository.findAllByComicId(comicId);
         assertEquals(expected, result);
+        verifyNoMoreInteractions(comicRepository);
+        verifyNoMoreInteractions(pageRepository);
+    }
+
+    @Test
+    public void testGetComicPage() {
+        Long comicId = 1L;
+        Comic comic1 = new Comic(1L, "Comic 1", "Comic 1 Description");
+        Page c1pg1 = new Page(1L, "mech-bros-images/Noxcomic_pg01_02.png", 1);
+        c1pg1.setComic(comic1);
+
+        Mockito.when(pageRepository.findByComicIdAndId(comicId, c1pg1.getId())).thenReturn(c1pg1);
+        Page result = pageRepository.findByComicIdAndId(comicId, c1pg1.getId());
+        assertEquals(c1pg1, result);
+        verifyNoMoreInteractions(pageRepository);
     }
 }
