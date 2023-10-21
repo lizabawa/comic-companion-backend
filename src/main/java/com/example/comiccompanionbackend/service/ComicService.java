@@ -52,18 +52,14 @@ public class ComicService {
         Optional<Comic> comicOptional = comicRepository.findById(comicId);
         Optional<Page> pageOptional = pageRepository.findById(pageId);
 
-        if(comicOptional.isPresent()) {
-            if(pageOptional.isPresent()) {
+        if (comicOptional.isPresent()){
+            if(pageOptional.isPresent() && pageOptional.get().getComic().getId().equals(comicOptional.get().getId())) {
                 return pageRepository.findByComicIdAndId(comicId, pageId);
             } else {
-                throw new InformationNotFoundException("Error: Page with Id " + pageId + " does not exist.");
+                throw new InformationNotFoundException("Error: Page with Id " + pageId + " does not exist for this comic.");
             }
         } else {
-            throw new InformationNotFoundException("Error: Comic with Id " + comicId + " does not exist.");
+            throw new InformationNotFoundException("Error: Comic with title " + comicId + " does not exist.");
         }
     }
 }
-
-// TODO should only pull pages related to the comic
-// TODO if page for a comic does not exist, an error should be thrown
-// TODO when viewing all comics, also show pages
