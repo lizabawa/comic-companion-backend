@@ -49,10 +49,13 @@ public class ComicService {
     }
 
     public Page getComicPage(Long comicId, Long pageId) {
+        //grabs the comic object if it exists in comic repository
         Optional<Comic> comicOptional = comicRepository.findById(comicId);
+        //grabs the page object if it exists in page repository
         Optional<Page> pageOptional = pageRepository.findById(pageId);
 
         if (comicOptional.isPresent()){
+            // If page is present AND the comicId matches the id of the comic that is associated with the page
             if(pageOptional.isPresent() && pageOptional.get().getComic().getId().equals(comicOptional.get().getId())) {
                 return pageRepository.findByComicIdAndId(comicId, pageId);
             } else {
