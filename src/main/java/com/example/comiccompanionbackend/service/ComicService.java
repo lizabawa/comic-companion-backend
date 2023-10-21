@@ -43,13 +43,9 @@ public class ComicService {
     }
 
     public List<Page> getComicPages(Long comicId) {
-        Optional<Comic> comicOptional = comicRepository.findById(comicId);
-        if(comicOptional.isPresent()){
-            return pageRepository.findAllByComicId(comicId);
-        } else {
-            throw new InformationNotFoundException("Error: Comic with Id " + comicId + " does not exist.");
-        }
-
+        return comicRepository.findById(comicId)
+                .map(comic -> pageRepository.findAllByComicId(comicId))
+                .orElseThrow(() -> new InformationNotFoundException("Error: Comic with Id " + comicId + " does not exist."));
     }
 
     public Page getComicPage(Long comicId, Long pageId) {
@@ -67,3 +63,7 @@ public class ComicService {
         }
     }
 }
+
+// TODO if page for one specific comic does not exist error should be thrown
+// TODO should only pull pages related to the comic
+// TODO when viewing all comics, also show pages
