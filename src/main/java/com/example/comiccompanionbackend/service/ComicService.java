@@ -56,5 +56,18 @@ public class ComicService {
 
     }
 
+    public Page getComicPage(Long comicId, Long pageId) {
+        Optional<Comic> comicOptional = comicRepository.findById(comicId);
+        Optional<Page> pageOptional = pageRepository.findById(pageId);
 
+        if(comicOptional.isPresent()) {
+            if(pageOptional.isPresent()) {
+                return pageRepository.findByComicIdAndId(comicId, pageId);
+            } else {
+                throw new InformationNotFoundException("Error: Page with Id " + pageId + " does not exist.");
+            }
+        } else {
+            throw new InformationNotFoundException("Error: Comic with Id " + comicId + " does not exist.");
+        }
+    }
 }
