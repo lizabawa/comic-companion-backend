@@ -37,8 +37,6 @@ public class ComicController {
         return comicService.getHelloWorld();
     }
 
-    ;
-
     @GetMapping(path = "")
     public ResponseEntity<?> getAllComics() {
         List<Comic> comics = comicService.getAllComics();
@@ -53,8 +51,16 @@ public class ComicController {
     }
 
     @GetMapping(path = "/{comicId}")
-    public Comic getComic(@PathVariable(value = "comicId") Long comicId) {
-        return comicService.getComic(comicId);
+    public ResponseEntity<?> getComic(@PathVariable(value = "comicId") Long comicId) {
+        Optional<Comic> comic = Optional.ofNullable(comicService.getComic(comicId));
+        if (comic.isPresent()) {
+            message.put("message", "success");
+            message.put("data", comic.get());
+            return new ResponseEntity<>(message, HttpStatus.OK);
+        } else {
+            message.put("message", "cannot find comic with id " + comicId);
+            return new ResponseEntity<>(message, HttpStatus.NOT_FOUND);
+        }
     }
 
     @GetMapping(path = "/{comicId}/pages")
