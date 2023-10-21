@@ -2,6 +2,7 @@ package com.example.comiccompanionbackend.service;
 
 import com.example.comiccompanionbackend.exception.InformationNotFoundException;
 import com.example.comiccompanionbackend.model.Comic;
+import com.example.comiccompanionbackend.model.Page;
 import com.example.comiccompanionbackend.repository.ComicRepository;
 import com.example.comiccompanionbackend.repository.PageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,5 +44,15 @@ public class ComicService {
         } else {
             throw new InformationNotFoundException("Error: Comic with Id " + comicId + " does not exist.");
         }
+    }
+
+    public List<Page> getComicPages(Long comicId) {
+        Optional<Comic> comicOptional = comicRepository.findById(comicId);
+        if(comicOptional.isPresent()){
+            return pageRepository.findAllByComicId(comicId);
+        } else {
+            throw new InformationNotFoundException("Error: Comic with Id " + comicId + " does not exist.");
+        }
+
     }
 }

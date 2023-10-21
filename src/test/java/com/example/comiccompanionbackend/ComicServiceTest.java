@@ -82,7 +82,7 @@ public class ComicServiceTest {
     }
 
     @Test
-    public void testGetAllPages() {
+    public void testGetComicPages() {
         Long comicId = 1L;
         Comic comic1 = new Comic(1L, "Comic 1", "Comic 1 Description");
         Page c1pg1 = new Page(1L, "mech-bros-images/Noxcomic_pg01_02.png", 1);
