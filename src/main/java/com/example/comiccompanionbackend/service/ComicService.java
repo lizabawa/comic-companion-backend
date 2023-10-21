@@ -64,6 +64,6 @@ public class ComicService {
     }
 }
 
-// TODO if page for one specific comic does not exist error should be thrown
 // TODO should only pull pages related to the comic
+// TODO if page for a comic does not exist, an error should be thrown
 // TODO when viewing all comics, also show pages
