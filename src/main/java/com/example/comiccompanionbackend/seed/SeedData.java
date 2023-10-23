@@ -25,7 +25,7 @@ public class SeedData implements CommandLineRunner {
         Comic mechBros = new Comic();
         mechBros.setTitle("Mech Bros");
         mechBros.setDescription("MechBros description Lorem ipsum dolor sit amet");
-        mechBros.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/1b956636bd91d737b371b7e429dd0060a2142a86/src/main/images/mech-bros-images/mech-bros.png");
+        mechBros.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/0aa6661bc2c769955deaac84e5f6201ad0d7edf4/src/main/images/mech-bros-images/mech-bros.png");
         comicRepository.save(mechBros);
 
         Page mbpg1 = new Page();
@@ -56,7 +56,7 @@ public class SeedData implements CommandLineRunner {
         Comic redRanger = new Comic();
         redRanger.setTitle("Red Ranger");
         redRanger.setDescription("Red Ranger description Lorem ipsum dolor");
-        redRanger.setUrl("src/main/images/red-ranger-images/red-ranger.png");
+        redRanger.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/0aa6661bc2c769955deaac84e5f6201ad0d7edf4/src/main/images/red-ranger-images/red-ranger.png");
         comicRepository.save(redRanger);
 
         Page rrpg1 = new Page();
@@ -111,7 +111,7 @@ public class SeedData implements CommandLineRunner {
         Comic twoSisters = new Comic();
         twoSisters.setTitle("The Tale of Two Sisters");
         twoSisters.setDescription("MechBros description Lorem ipsum dolor sit amet");
-        twoSisters.setUrl("src/main/images/two-sisters-images/two-sisters.png");
+        twoSisters.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/0aa6661bc2c769955deaac84e5f6201ad0d7edf4/src/main/images/two-sisters-images/two-sisters.png");
         comicRepository.save(twoSisters);
 
         Page tspg1 = new Page();
