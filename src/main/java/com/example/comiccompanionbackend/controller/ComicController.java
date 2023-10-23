@@ -18,7 +18,7 @@ import java.util.Optional;
 import java.util.logging.Logger;
 
 @RestController
-@RequestMapping("/api/v1/comics")
+@RequestMapping("/api/v1")
 public class ComicController {
     Logger log = Logger.getLogger(ComicController.class.getName());
 
@@ -37,7 +37,7 @@ public class ComicController {
         return comicService.getHelloWorld();
     }
 
-    @GetMapping(path = "")
+    @GetMapping(path = "/comics")
     public ResponseEntity<?> getAllComics() {
         List<Comic> comics = comicService.getAllComics();
         if (comics.isEmpty()) {
@@ -50,7 +50,7 @@ public class ComicController {
         }
     }
 
-    @GetMapping(path = "/{comicId}")
+    @GetMapping(path = "/comics/{comicId}")
     public ResponseEntity<?> getComic(@PathVariable(value = "comicId") Long comicId) {
         Optional<Comic> comic = Optional.ofNullable(comicService.getComic(comicId));
         if (comic.isPresent()) {
@@ -63,7 +63,7 @@ public class ComicController {
         }
     }
 
-    @GetMapping(path = "/{comicId}/pages")
+    @GetMapping(path = "/comics/{comicId}/pages")
     public ResponseEntity<?> getComicPages(@PathVariable(value = "comicId") Long comicId) {
         List<Page> pagesList = comicService.getComicPages(comicId);
         if (pagesList.isEmpty()){
@@ -76,7 +76,7 @@ public class ComicController {
         }
     }
 
-    @GetMapping(path = "/{comicId}/pages/{pageId}")
+    @GetMapping(path = "/comics/{comicId}/pages/{pageId}")
     public ResponseEntity<?> getComicPage(@PathVariable(value = "comicId") Long comicId, @PathVariable(value = "pageId") Long pageId) {
         Optional<Page> page = Optional.ofNullable(comicService.getComicPage(comicId, pageId));
 

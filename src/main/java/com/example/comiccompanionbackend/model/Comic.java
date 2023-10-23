@@ -20,6 +20,9 @@ public class Comic {
     @Column
     private String description;
 
+    @Column
+    private String url;
+
     @OneToMany
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<Page> page;
@@ -27,10 +30,11 @@ public class Comic {
     public Comic() {
     }
 
-    public Comic(Long id, String title, String description) {
+    public Comic(Long id, String title, String description, String url) {
         this.id = id;
         this.title = title;
         this.description = description;
+        this.url = url;
     }
 
     public Long getId() {
@@ -65,12 +69,21 @@ public class Comic {
         this.page = page;
     }
 
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
     @Override
     public String toString() {
         return "Comic{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
+                ", url='" + url + '\'' +
                 ", page=" + page +
                 '}';
     }

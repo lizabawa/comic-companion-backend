@@ -70,8 +70,8 @@ public class Page {
     public String toString() {
         return "Page{" +
                 "id=" + id +
-                ", url=" + url +
-                ", pageNumber='" + pageNumber + '\'' +
+                ", url='" + url + '\'' +
+                ", pageNumber=" + pageNumber +
                 ", comic=" + comic +
                 '}';
     }
