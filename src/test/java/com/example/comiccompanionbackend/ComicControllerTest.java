@@ -44,9 +44,9 @@ public class ComicControllerTest {
 
     @BeforeEach
     void setUp(){
-        comic1 = new Comic(1L, "Comic 1", "Comic 1 Description");
-        comic2 = new Comic(2L, "Comic 2", "Comic 2 Description");
-        comic3 = new Comic(3L, "Comic 3", "Comic 3 Description");
+        comic1 = new Comic(1L, "Comic 1", "Comic 1 Description", "red-ranger-images/red-ranger.png");
+        comic2 = new Comic(2L, "Comic 2", "Comic 2 Description", "red-ranger-images/red-ranger.png");
+        comic3 = new Comic(3L, "Comic 3", "Comic 3 Description", "red-ranger-images/red-ranger.png");
         c1pg1 = new Page(1L, "mech-bros-images/Noxcomic_pg01_02.png", 1);
         c1pg1.setComic(comic1);
         c1pg2 = new Page(2L, "mech-bros-images/Noxcomic_pg02_02.png", 2);
