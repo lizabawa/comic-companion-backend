@@ -25,30 +25,30 @@ public class SeedData implements CommandLineRunner {
         Comic mechBros = new Comic();
         mechBros.setTitle("Mech Bros");
         mechBros.setDescription("MechBros description Lorem ipsum dolor sit amet");
-        mechBros.setUrl("resources/mech-bros-images/mech-bros.png");
+        mechBros.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/1b956636bd91d737b371b7e429dd0060a2142a86/src/main/images/mech-bros-images/mech-bros.png");
         comicRepository.save(mechBros);
 
         Page mbpg1 = new Page();
         mbpg1.setPageNumber(1);
-        mbpg1.setUrl("mech-bros-images/Noxcomic_pg01_02.png");
+        mbpg1.setUrl("src/main/images/mech-bros-images/Noxcomic_pg01_02.png");
         mbpg1.setComic(mechBros);
         pageRepository.save(mbpg1);
 
         Page mbpg2 = new Page();
         mbpg2.setPageNumber(2);
-        mbpg2.setUrl("mech-bros-images/Noxcomic_pg02_02.png");
+        mbpg2.setUrl("src/main/images/mech-bros-images/Noxcomic_pg02_02.png");
         mbpg2.setComic(mechBros);
         pageRepository.save(mbpg2);
 
         Page mbpg3 = new Page();
         mbpg3.setPageNumber(3);
-        mbpg3.setUrl("mech-bros-images/Noxcomic_pg03_05.png");
+        mbpg3.setUrl("src/main/images/mech-bros-images/Noxcomic_pg03_05.png");
         mbpg3.setComic(mechBros);
         pageRepository.save(mbpg3);
 
         Page mbpg4 = new Page();
         mbpg4.setPageNumber(4);
-        mbpg4.setUrl("mech-bros-images/Noxcomic_pg04_05.png");
+        mbpg4.setUrl("src/main/images/mech-bros-images/Noxcomic_pg04_05.png");
         mbpg4.setComic(mechBros);
         pageRepository.save(mbpg4);
 
@@ -56,54 +56,54 @@ public class SeedData implements CommandLineRunner {
         Comic redRanger = new Comic();
         redRanger.setTitle("Red Ranger");
         redRanger.setDescription("Red Ranger description Lorem ipsum dolor");
-        redRanger.setUrl("red-ranger-images/red-ranger.png");
+        redRanger.setUrl("src/main/images/red-ranger-images/red-ranger.png");
         comicRepository.save(redRanger);
 
         Page rrpg1 = new Page();
         rrpg1.setPageNumber(1);
-        rrpg1.setUrl("red-ranger-images/RedRanger_comic_001.png");
+        rrpg1.setUrl("src/main/images/red-ranger-images/RedRanger_comic_001.png");
         rrpg1.setComic(redRanger);
         pageRepository.save(rrpg1);
 
         Page rrpg2 = new Page();
         rrpg2.setPageNumber(2);
-        rrpg2.setUrl("red-ranger-images/RedRanger_comic_002.png");
+        rrpg2.setUrl("src/main/images/red-ranger-images/RedRanger_comic_002.png");
         rrpg2.setComic(redRanger);
         pageRepository.save(rrpg2);
 
         Page rrpg3 = new Page();
         rrpg3.setPageNumber(3);
-        rrpg3.setUrl("red-ranger-images/RedRanger_comic_003.png");
+        rrpg3.setUrl("src/main/images/red-ranger-images/RedRanger_comic_003.png");
         rrpg3.setComic(redRanger);
         pageRepository.save(rrpg3);
 
         Page rrpg4 = new Page();
         rrpg4.setPageNumber(4);
-        rrpg4.setUrl("red-ranger-images/RedRanger_comic_004.png");
+        rrpg4.setUrl("src/main/images/red-ranger-images/RedRanger_comic_004.png");
         rrpg4.setComic(redRanger);
         pageRepository.save(rrpg4);
 
         Page rrpg5 = new Page();
         rrpg5.setPageNumber(5);
-        rrpg5.setUrl("red-ranger-images/RedRanger_comic_005.png");
+        rrpg5.setUrl("src/main/images/red-ranger-images/RedRanger_comic_005.png");
         rrpg5.setComic(redRanger);
         pageRepository.save(rrpg5);
 
         Page rrpg6 = new Page();
         rrpg6.setPageNumber(6);
-        rrpg6.setUrl("red-ranger-images/RedRanger_comic_006.png");
+        rrpg6.setUrl("src/main/images/red-ranger-images/RedRanger_comic_006.png");
         rrpg6.setComic(redRanger);
         pageRepository.save(rrpg6);
 
         Page rrpg7 = new Page();
         rrpg7.setPageNumber(7);
-        rrpg7.setUrl("red-ranger-images/RedRanger_comic_007.png");
+        rrpg7.setUrl("src/main/images/red-ranger-images/RedRanger_comic_007.png");
         rrpg7.setComic(redRanger);
         pageRepository.save(rrpg7);
 
         Page rrpg8 = new Page();
         rrpg8.setPageNumber(8);
-        rrpg8.setUrl("red-ranger-images/RedRanger_comic_008.png");
+        rrpg8.setUrl("src/main/images/red-ranger-images/RedRanger_comic_008.png");
         rrpg8.setComic(redRanger);
         pageRepository.save(rrpg8);
 
@@ -111,30 +111,30 @@ public class SeedData implements CommandLineRunner {
         Comic twoSisters = new Comic();
         twoSisters.setTitle("The Tale of Two Sisters");
         twoSisters.setDescription("MechBros description Lorem ipsum dolor sit amet");
-        twoSisters.setUrl("two-sisters-images/two-sisters.png");
+        twoSisters.setUrl("src/main/images/two-sisters-images/two-sisters.png");
         comicRepository.save(twoSisters);
 
         Page tspg1 = new Page();
         tspg1.setPageNumber(1);
-        tspg1.setUrl("two-sisters-images/Renowned_p01_01.png");
+        tspg1.setUrl("src/main/images/two-sisters-images/Renowned_p01_01.png");
         tspg1.setComic(twoSisters);
         pageRepository.save(tspg1);
 
         Page tspg2 = new Page();
         tspg2.setPageNumber(2);
-        tspg2.setUrl("two-sisters-images/Renowned_p02_01.png");
+        tspg2.setUrl("src/main/images/two-sisters-images/Renowned_p02_01.png");
         tspg2.setComic(twoSisters);
         pageRepository.save(tspg2);
 
         Page tspg3 = new Page();
         tspg3.setPageNumber(3);
-        tspg3.setUrl("two-sisters-images/Renowned_p03_06.png");
+        tspg3.setUrl("src/main/images/two-sisters-images/Renowned_p03_06.png");
         tspg3.setComic(twoSisters);
         pageRepository.save(tspg3);
 
         Page tspg4 = new Page();
         tspg4.setPageNumber(4);
-        tspg4.setUrl("two-sisters-images/Renowned_p04_04.png");
+        tspg4.setUrl("src/main/images/two-sisters-images/Renowned_p04_04.png");
         tspg4.setComic(twoSisters);
         pageRepository.save(tspg4);
 
@@ -146,13 +146,13 @@ public class SeedData implements CommandLineRunner {
 
         Page c4pg1 = new Page();
         c4pg1.setPageNumber(1);
-        c4pg1.setUrl("two-sisters-images/Renowned_p04_04.png");
+        c4pg1.setUrl("src/main/images/two-sisters-images/Renowned_p04_04.png");
         c4pg1.setComic(comic4);
         pageRepository.save(c4pg1);
 
         Page c4pg2 = new Page();
         c4pg2.setPageNumber(2);
-        c4pg2.setUrl("red-ranger-images/RedRanger_comic_008.png");
+        c4pg2.setUrl("src/main/images/red-ranger-images/RedRanger_comic_008.png");
         c4pg2.setComic(comic4);
         pageRepository.save(c4pg2);
 
@@ -164,13 +164,13 @@ public class SeedData implements CommandLineRunner {
 
         Page c5pg1 = new Page();
         c5pg1.setPageNumber(1);
-        c5pg1.setUrl("red-ranger-images/RedRanger_comic_008.png");
+        c5pg1.setUrl("src/main/images/red-ranger-images/RedRanger_comic_008.png");
         c5pg1.setComic(comic5);
         pageRepository.save(c5pg1);
 
         Page c5pg2 = new Page();
         c5pg2.setPageNumber(2);
-        c5pg2.setUrl("two-sisters-images/Renowned_p04_04.png");
+        c5pg2.setUrl("src/main/images/two-sisters-images/Renowned_p04_04.png");
         c5pg2.setComic(comic5);
         pageRepository.save(c5pg2);
 
@@ -182,13 +182,13 @@ public class SeedData implements CommandLineRunner {
 
         Page c6pg1 = new Page();
         c6pg1.setPageNumber(1);
-        c6pg1.setUrl("red-ranger-images/RedRanger_comic_008.png");
+        c6pg1.setUrl("src/main/images/red-ranger-images/RedRanger_comic_008.png");
         c6pg1.setComic(comic6);
         pageRepository.save(c6pg1);
 
         Page c6pg2 = new Page();
         c6pg2.setPageNumber(2);
-        c6pg2.setUrl("two-sisters-images/Renowned_p04_04.png");
+        c6pg2.setUrl("src/main/images/two-sisters-images/Renowned_p04_04.png");
         c6pg2.setComic(comic6);
         pageRepository.save(c6pg2);
 
@@ -200,13 +200,13 @@ public class SeedData implements CommandLineRunner {
 
         Page c7pg1 = new Page();
         c7pg1.setPageNumber(1);
-        c7pg1.setUrl("red-ranger-images/RedRanger_comic_008.png");
+        c7pg1.setUrl("src/main/images/red-ranger-images/RedRanger_comic_008.png");
         c7pg1.setComic(comic7);
         pageRepository.save(c7pg1);
 
         Page c7pg2 = new Page();
         c7pg2.setPageNumber(2);
-        c7pg2.setUrl("two-sisters-images/Renowned_p04_04.png");
+        c7pg2.setUrl("src/main/images/two-sisters-images/Renowned_p04_04.png");
         c7pg2.setComic(comic7);
         pageRepository.save(c7pg2);
 
@@ -218,13 +218,13 @@ public class SeedData implements CommandLineRunner {
 
         Page c8pg1 = new Page();
         c8pg1.setPageNumber(1);
-        c8pg1.setUrl("red-ranger-images/RedRanger_comic_008.png");
+        c8pg1.setUrl("src/main/images/red-ranger-images/RedRanger_comic_008.png");
         c8pg1.setComic(comic8);
         pageRepository.save(c8pg1);
 
         Page c8pg2 = new Page();
         c8pg2.setPageNumber(2);
-        c8pg2.setUrl("two-sisters-images/Renowned_p04_04.png");
+        c8pg2.setUrl("src/main/images/two-sisters-images/Renowned_p04_04.png");
         c8pg2.setComic(comic8);
         pageRepository.save(c8pg2);
 
@@ -236,13 +236,13 @@ public class SeedData implements CommandLineRunner {
 
         Page c9pg1 = new Page();
         c9pg1.setPageNumber(1);
-        c9pg1.setUrl("red-ranger-images/RedRanger_comic_008.png");
+        c9pg1.setUrl("src/main/images/red-ranger-images/RedRanger_comic_008.png");
         c9pg1.setComic(comic9);
         pageRepository.save(c9pg1);
 
         Page c9pg2 = new Page();
         c9pg2.setPageNumber(2);
-        c9pg2.setUrl("two-sisters-images/Renowned_p04_04.png");
+        c9pg2.setUrl("src/main/images/two-sisters-images/Renowned_p04_04.png");
         c9pg2.setComic(comic9);
         pageRepository.save(c9pg2);
     }
