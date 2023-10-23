@@ -134,5 +134,113 @@ public class SeedData implements CommandLineRunner {
         tspg4.setUrl("two-sisters-images/Renowned_p04_04.png");
         tspg4.setComic(twoSisters);
         pageRepository.save(tspg4);
+
+        //Comic 4
+        Comic comic4 = new Comic();
+        comic4.setTitle("Comic 4");
+        comic4.setDescription("Comic 4 description");
+        comicRepository.save(comic4);
+
+        Page c4pg1 = new Page();
+        c4pg1.setPageNumber(1);
+        c4pg1.setUrl("two-sisters-images/Renowned_p04_04.png");
+        c4pg1.setComic(comic4);
+        pageRepository.save(c4pg1);
+
+        Page c4pg2 = new Page();
+        c4pg2.setPageNumber(2);
+        c4pg2.setUrl("red-ranger-images/RedRanger_comic_008.png");
+        c4pg2.setComic(comic4);
+        pageRepository.save(c4pg2);
+
+        //Comic 5
+        Comic comic5 = new Comic();
+        comic5.setTitle("Comic 5");
+        comic5.setDescription("Comic 5 description");
+        comicRepository.save(comic5);
+
+        Page c5pg1 = new Page();
+        c5pg1.setPageNumber(1);
+        c5pg1.setUrl("red-ranger-images/RedRanger_comic_008.png");
+        c5pg1.setComic(comic5);
+        pageRepository.save(c5pg1);
+
+        Page c5pg2 = new Page();
+        c5pg2.setPageNumber(2);
+        c5pg2.setUrl("two-sisters-images/Renowned_p04_04.png");
+        c5pg2.setComic(comic5);
+        pageRepository.save(c5pg2);
+
+        //Comic 6
+        Comic comic6 = new Comic();
+        comic6.setTitle("Comic 6");
+        comic6.setDescription("Comic 6 description");
+        comicRepository.save(comic6);
+
+        Page c6pg1 = new Page();
+        c6pg1.setPageNumber(1);
+        c6pg1.setUrl("red-ranger-images/RedRanger_comic_008.png");
+        c6pg1.setComic(comic6);
+        pageRepository.save(c6pg1);
+
+        Page c6pg2 = new Page();
+        c6pg2.setPageNumber(2);
+        c6pg2.setUrl("two-sisters-images/Renowned_p04_04.png");
+        c6pg2.setComic(comic6);
+        pageRepository.save(c6pg2);
+
+        //Comic 7
+        Comic comic7 = new Comic();
+        comic7.setTitle("Comic 7");
+        comic7.setDescription("Comic 7 description");
+        comicRepository.save(comic7);
+
+        Page c7pg1 = new Page();
+        c7pg1.setPageNumber(1);
+        c7pg1.setUrl("red-ranger-images/RedRanger_comic_008.png");
+        c7pg1.setComic(comic7);
+        pageRepository.save(c7pg1);
+
+        Page c7pg2 = new Page();
+        c7pg2.setPageNumber(2);
+        c7pg2.setUrl("two-sisters-images/Renowned_p04_04.png");
+        c7pg2.setComic(comic7);
+        pageRepository.save(c7pg2);
+
+        //Comic 8
+        Comic comic8 = new Comic();
+        comic8.setTitle("Comic 8");
+        comic8.setDescription("Comic 8 description");
+        comicRepository.save(comic8);
+
+        Page c8pg1 = new Page();
+        c8pg1.setPageNumber(1);
+        c8pg1.setUrl("red-ranger-images/RedRanger_comic_008.png");
+        c8pg1.setComic(comic8);
+        pageRepository.save(c8pg1);
+
+        Page c8pg2 = new Page();
+        c8pg2.setPageNumber(2);
+        c8pg2.setUrl("two-sisters-images/Renowned_p04_04.png");
+        c8pg2.setComic(comic8);
+        pageRepository.save(c8pg2);
+
+        //Comic 9
+        Comic comic9 = new Comic();
+        comic9.setTitle("Comic 9");
+        comic9.setDescription("Comic 9 description");
+        comicRepository.save(comic9);
+
+        Page c9pg1 = new Page();
+        c9pg1.setPageNumber(1);
+        c9pg1.setUrl("red-ranger-images/RedRanger_comic_008.png");
+        c9pg1.setComic(comic9);
+        pageRepository.save(c9pg1);
+
+        Page c9pg2 = new Page();
+        c9pg2.setPageNumber(2);
+        c9pg2.setUrl("two-sisters-images/Renowned_p04_04.png");
+        c9pg2.setComic(comic9);
+        pageRepository.save(c9pg2);
     }
 }
