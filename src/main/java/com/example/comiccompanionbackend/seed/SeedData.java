@@ -142,6 +142,7 @@ public class SeedData implements CommandLineRunner {
         Comic comic4 = new Comic();
         comic4.setTitle("Comic 4");
         comic4.setDescription("Comic 4 description");
+        comic4.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/mech-bros-images/mech-bros.png?raw=true");
         comicRepository.save(comic4);
 
         Page c4pg1 = new Page();
@@ -160,6 +161,7 @@ public class SeedData implements CommandLineRunner {
         Comic comic5 = new Comic();
         comic5.setTitle("Comic 5");
         comic5.setDescription("Comic 5 description");
+        comic5.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/mech-bros-images/mech-bros.png?raw=true");
         comicRepository.save(comic5);
 
         Page c5pg1 = new Page();
@@ -178,6 +180,7 @@ public class SeedData implements CommandLineRunner {
         Comic comic6 = new Comic();
         comic6.setTitle("Comic 6");
         comic6.setDescription("Comic 6 description");
+        comic6.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/mech-bros-images/mech-bros.png?raw=true");
         comicRepository.save(comic6);
 
         Page c6pg1 = new Page();
@@ -196,6 +199,7 @@ public class SeedData implements CommandLineRunner {
         Comic comic7 = new Comic();
         comic7.setTitle("Comic 7");
         comic7.setDescription("Comic 7 description");
+        comic7.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/mech-bros-images/mech-bros.png?raw=true");
         comicRepository.save(comic7);
 
         Page c7pg1 = new Page();
@@ -214,6 +218,7 @@ public class SeedData implements CommandLineRunner {
         Comic comic8 = new Comic();
         comic8.setTitle("Comic 8");
         comic8.setDescription("Comic 8 description");
+        comic8.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/mech-bros-images/mech-bros.png?raw=true");
         comicRepository.save(comic8);
 
         Page c8pg1 = new Page();
@@ -232,6 +237,7 @@ public class SeedData implements CommandLineRunner {
         Comic comic9 = new Comic();
         comic9.setTitle("Comic 9");
         comic9.setDescription("Comic 9 description");
+        comic9.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/mech-bros-images/mech-bros.png?raw=true");
         comicRepository.save(comic9);
 
         Page c9pg1 = new Page();
