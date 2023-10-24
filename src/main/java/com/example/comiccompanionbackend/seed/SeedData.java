@@ -30,25 +30,25 @@ public class SeedData implements CommandLineRunner {
 
         Page mbpg1 = new Page();
         mbpg1.setPageNumber(1);
-        mbpg1.setUrl("src/main/images/mech-bros-images/Noxcomic_pg01_02.png");
+        mbpg1.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/mech-bros-images/Noxcomic_pg01_02.png?raw=true");
         mbpg1.setComic(mechBros);
         pageRepository.save(mbpg1);
 
         Page mbpg2 = new Page();
         mbpg2.setPageNumber(2);
-        mbpg2.setUrl("src/main/images/mech-bros-images/Noxcomic_pg02_02.png");
+        mbpg2.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/mech-bros-images/Noxcomic_pg02_02.png?raw=true");
         mbpg2.setComic(mechBros);
         pageRepository.save(mbpg2);
 
         Page mbpg3 = new Page();
         mbpg3.setPageNumber(3);
-        mbpg3.setUrl("src/main/images/mech-bros-images/Noxcomic_pg03_05.png");
+        mbpg3.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/mech-bros-images/Noxcomic_pg03_05.png?raw=true");
         mbpg3.setComic(mechBros);
         pageRepository.save(mbpg3);
 
         Page mbpg4 = new Page();
         mbpg4.setPageNumber(4);
-        mbpg4.setUrl("src/main/images/mech-bros-images/Noxcomic_pg04_05.png");
+        mbpg4.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/mech-bros-images/Noxcomic_pg04_05.png?raw=true");
         mbpg4.setComic(mechBros);
         pageRepository.save(mbpg4);
 
