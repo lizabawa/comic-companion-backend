@@ -146,13 +146,13 @@ public class SeedData implements CommandLineRunner {
 
         Page c4pg1 = new Page();
         c4pg1.setPageNumber(1);
-        c4pg1.setUrl("src/main/images/two-sisters-images/Renowned_p04_04.png");
+        c4pg1.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/two-sisters-images/Renowned_p04_04.png?raw=true");
         c4pg1.setComic(comic4);
         pageRepository.save(c4pg1);
 
         Page c4pg2 = new Page();
         c4pg2.setPageNumber(2);
-        c4pg2.setUrl("src/main/images/red-ranger-images/RedRanger_comic_008.png");
+        c4pg2.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_007.png?raw=true");
         c4pg2.setComic(comic4);
         pageRepository.save(c4pg2);
 
@@ -164,13 +164,13 @@ public class SeedData implements CommandLineRunner {
 
         Page c5pg1 = new Page();
         c5pg1.setPageNumber(1);
-        c5pg1.setUrl("src/main/images/red-ranger-images/RedRanger_comic_008.png");
+        c5pg1.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_007.png?raw=true");
         c5pg1.setComic(comic5);
         pageRepository.save(c5pg1);
 
         Page c5pg2 = new Page();
         c5pg2.setPageNumber(2);
-        c5pg2.setUrl("src/main/images/two-sisters-images/Renowned_p04_04.png");
+        c5pg2.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/two-sisters-images/Renowned_p04_04.png?raw=true");
         c5pg2.setComic(comic5);
         pageRepository.save(c5pg2);
 
@@ -182,13 +182,13 @@ public class SeedData implements CommandLineRunner {
 
         Page c6pg1 = new Page();
         c6pg1.setPageNumber(1);
-        c6pg1.setUrl("src/main/images/red-ranger-images/RedRanger_comic_008.png");
+        c6pg1.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_007.png?raw=true");
         c6pg1.setComic(comic6);
         pageRepository.save(c6pg1);
 
         Page c6pg2 = new Page();
         c6pg2.setPageNumber(2);
-        c6pg2.setUrl("src/main/images/two-sisters-images/Renowned_p04_04.png");
+        c6pg2.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/two-sisters-images/Renowned_p04_04.png?raw=true");
         c6pg2.setComic(comic6);
         pageRepository.save(c6pg2);
 
@@ -200,13 +200,13 @@ public class SeedData implements CommandLineRunner {
 
         Page c7pg1 = new Page();
         c7pg1.setPageNumber(1);
-        c7pg1.setUrl("src/main/images/red-ranger-images/RedRanger_comic_008.png");
+        c7pg1.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_007.png?raw=true");
         c7pg1.setComic(comic7);
         pageRepository.save(c7pg1);
 
         Page c7pg2 = new Page();
         c7pg2.setPageNumber(2);
-        c7pg2.setUrl("src/main/images/two-sisters-images/Renowned_p04_04.png");
+        c7pg2.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/two-sisters-images/Renowned_p04_04.png?raw=true");
         c7pg2.setComic(comic7);
         pageRepository.save(c7pg2);
 
@@ -218,13 +218,13 @@ public class SeedData implements CommandLineRunner {
 
         Page c8pg1 = new Page();
         c8pg1.setPageNumber(1);
-        c8pg1.setUrl("src/main/images/red-ranger-images/RedRanger_comic_008.png");
+        c8pg1.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_007.png?raw=true");
         c8pg1.setComic(comic8);
         pageRepository.save(c8pg1);
 
         Page c8pg2 = new Page();
         c8pg2.setPageNumber(2);
-        c8pg2.setUrl("src/main/images/two-sisters-images/Renowned_p04_04.png");
+        c8pg2.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/two-sisters-images/Renowned_p04_04.png?raw=true");
         c8pg2.setComic(comic8);
         pageRepository.save(c8pg2);
 
@@ -236,13 +236,13 @@ public class SeedData implements CommandLineRunner {
 
         Page c9pg1 = new Page();
         c9pg1.setPageNumber(1);
-        c9pg1.setUrl("src/main/images/red-ranger-images/RedRanger_comic_008.png");
+        c9pg1.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_007.png?raw=true");
         c9pg1.setComic(comic9);
         pageRepository.save(c9pg1);
 
         Page c9pg2 = new Page();
         c9pg2.setPageNumber(2);
-        c9pg2.setUrl("src/main/images/two-sisters-images/Renowned_p04_04.png");
+        c9pg2.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/two-sisters-images/Renowned_p04_04.png?raw=true");
         c9pg2.setComic(comic9);
         pageRepository.save(c9pg2);
     }
