@@ -3,12 +3,10 @@ package com.example.comiccompanionbackend.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
-import java.net.URL;
 
 /**
- * The Page class represents a page of a comic, typically stored in a database.
+ * The Page class represents a page of a comic.
  * It contains information about the page, such as its URL, page number, and the associated comic.
- * This class is typically used in a Java Persistence API (JPA) context for database interaction.
  *
  * Each page has a unique identifier (ID), a URL that points to the page's content, and a page number within the comic.
  * Additionally, each page is associated with a parent `Comic` object, which is represented as a many-to-one relationship.

@@ -7,9 +7,8 @@ import javax.persistence.*;
 import java.util.List;
 
 /**
- * The `Comic` class represents a comic book or comic strip, typically stored in a database.
+ * The `Comic` class represents a comic book or comic strip.
  * It contains information about the comic, such as its title, description, URL, and associated pages.
- * This class is typically used in a Java Persistence API (JPA) context for database interaction.
  *
  * Each comic has a unique identifier (ID), a title, a description, and a URL that points to its online location.
  * Additionally, a comic may have multiple associated pages, which are represented as a list of `Page` objects.

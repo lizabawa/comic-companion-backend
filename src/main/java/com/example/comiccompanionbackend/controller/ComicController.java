@@ -1,6 +1,5 @@
 package com.example.comiccompanionbackend.controller;
 
-import com.example.comiccompanionbackend.exception.InformationNotFoundException;
 import com.example.comiccompanionbackend.model.Comic;
 import com.example.comiccompanionbackend.model.Page;
 import com.example.comiccompanionbackend.service.ComicService;
