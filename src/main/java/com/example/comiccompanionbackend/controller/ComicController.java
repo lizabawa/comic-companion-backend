@@ -17,6 +17,10 @@ import java.util.List;
 import java.util.Optional;
 import java.util.logging.Logger;
 
+/**
+ * The ComicController class handles HTTP requests related to comics and comic pages.
+ * It provides endpoints for retrieving information about comics and their associated pages.
+ */
 @RestController
 @RequestMapping("/api/v1")
 public class ComicController {
@@ -27,6 +31,11 @@ public class ComicController {
 
     private ComicService comicService;
 
+    /**
+     * Setter for the ComicService dependency.
+     *
+     * @param comicService The ComicService instance to be injected.
+     */
     @Autowired
     public void setComicService(ComicService comicService) {
         this.comicService = comicService;
@@ -37,6 +46,11 @@ public class ComicController {
         return comicService.getHelloWorld();
     }
 
+    /**
+     * Retrieves a list of all comics.
+     *
+     * @return A JSON response containing a list of all comics or an error message if none are found.
+     */
     @GetMapping(path = "/comics")
     public ResponseEntity<?> getAllComics() {
         List<Comic> comics = comicService.getAllComics();
@@ -50,6 +64,12 @@ public class ComicController {
         }
     }
 
+    /**
+     * Retrieves a specific comic by its ID.
+     *
+     * @param comicId The unique identifier of the comic to retrieve.
+     * @return A JSON response containing the requested comic or an error message if it's not found.
+     */
     @GetMapping(path = "/comics/{comicId}")
     public ResponseEntity<?> getComic(@PathVariable(value = "comicId") Long comicId) {
         Optional<Comic> comic = Optional.ofNullable(comicService.getComic(comicId));
@@ -63,6 +83,12 @@ public class ComicController {
         }
     }
 
+    /**
+     * Retrieves a list of pages associated with a specific comic by its ID.
+     *
+     * @param comicId The unique identifier of the comic.
+     * @return A JSON response containing a list of pages or an error message if none are found.
+     */
     @GetMapping(path = "/comics/{comicId}/pages")
     public ResponseEntity<?> getComicPages(@PathVariable(value = "comicId") Long comicId) {
         List<Page> pagesList = comicService.getComicPages(comicId);
@@ -76,6 +102,13 @@ public class ComicController {
         }
     }
 
+    /**
+     * Retrieves a specific page within a comic by comic ID and page ID.
+     *
+     * @param comicId The unique identifier of the comic.
+     * @param pageId The unique identifier of the page.
+     * @return A JSON response containing the requested page or an error message if it's not found.
+     */
     @GetMapping(path = "/comics/{comicId}/pages/{pageId}")
     public ResponseEntity<?> getComicPage(@PathVariable(value = "comicId") Long comicId, @PathVariable(value = "pageId") Long pageId) {
         Optional<Page> page = Optional.ofNullable(comicService.getComicPage(comicId, pageId));
