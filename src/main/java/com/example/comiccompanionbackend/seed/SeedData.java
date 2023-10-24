@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class SeedData implements CommandLineRunner {
     private ComicRepository comicRepository;
@@ -51,6 +53,9 @@ public class SeedData implements CommandLineRunner {
         mbpg4.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/mech-bros-images/Noxcomic_pg04_05.png?raw=true");
         mbpg4.setComic(mechBros);
         pageRepository.save(mbpg4);
+
+        mechBros.setPage(List.of(mbpg1, mbpg2, mbpg3, mbpg4));
+        comicRepository.save(mechBros);
 
         //RED RANGER
         Comic redRanger = new Comic();
@@ -107,6 +112,9 @@ public class SeedData implements CommandLineRunner {
         rrpg8.setComic(redRanger);
         pageRepository.save(rrpg8);
 
+        redRanger.setPage(List.of(rrpg1, rrpg2, rrpg3, rrpg4, rrpg5, rrpg6, rrpg7, rrpg8));
+        comicRepository.save(redRanger);
+
         //TWO SISTERS
         Comic twoSisters = new Comic();
         twoSisters.setTitle("The Tale of Two Sisters");
@@ -138,6 +146,9 @@ public class SeedData implements CommandLineRunner {
         tspg4.setComic(twoSisters);
         pageRepository.save(tspg4);
 
+        twoSisters.setPage(List.of(tspg1, tspg2, tspg3, tspg4));
+        comicRepository.save(twoSisters);
+
         //Comic 4
         Comic comic4 = new Comic();
         comic4.setTitle("Comic 4");
@@ -156,6 +167,9 @@ public class SeedData implements CommandLineRunner {
         c4pg2.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_007.png?raw=true");
         c4pg2.setComic(comic4);
         pageRepository.save(c4pg2);
+
+        comic4.setPage(List.of(c4pg1, c4pg2));
+        comicRepository.save(comic4);
 
         //Comic 5
         Comic comic5 = new Comic();
@@ -176,6 +190,9 @@ public class SeedData implements CommandLineRunner {
         c5pg2.setComic(comic5);
         pageRepository.save(c5pg2);
 
+        comic5.setPage(List.of(c5pg1, c5pg2));
+        comicRepository.save(comic5);
+
         //Comic 6
         Comic comic6 = new Comic();
         comic6.setTitle("Comic 6");
@@ -194,6 +211,9 @@ public class SeedData implements CommandLineRunner {
         c6pg2.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/two-sisters-images/Renowned_p04_04.png?raw=true");
         c6pg2.setComic(comic6);
         pageRepository.save(c6pg2);
+
+        comic6.setPage(List.of(c6pg1, c6pg2));
+        comicRepository.save(comic6);
 
         //Comic 7
         Comic comic7 = new Comic();
@@ -214,6 +234,9 @@ public class SeedData implements CommandLineRunner {
         c7pg2.setComic(comic7);
         pageRepository.save(c7pg2);
 
+        comic7.setPage(List.of(c7pg1, c7pg2));
+        comicRepository.save(comic7);
+
         //Comic 8
         Comic comic8 = new Comic();
         comic8.setTitle("Comic 8");
@@ -233,6 +256,9 @@ public class SeedData implements CommandLineRunner {
         c8pg2.setComic(comic8);
         pageRepository.save(c8pg2);
 
+        comic8.setPage(List.of(c8pg1, c8pg2));
+        comicRepository.save(comic8);
+
         //Comic 9
         Comic comic9 = new Comic();
         comic9.setTitle("Comic 9");
@@ -251,5 +277,8 @@ public class SeedData implements CommandLineRunner {
         c9pg2.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/two-sisters-images/Renowned_p04_04.png?raw=true");
         c9pg2.setComic(comic9);
         pageRepository.save(c9pg2);
+
+        comic9.setPage(List.of(c9pg1, c9pg2));
+        comicRepository.save(comic9);
     }
 }
