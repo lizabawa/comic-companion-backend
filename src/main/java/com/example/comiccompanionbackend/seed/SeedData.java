@@ -25,7 +25,7 @@ public class SeedData implements CommandLineRunner {
         Comic mechBros = new Comic();
         mechBros.setTitle("Mech Bros");
         mechBros.setDescription("MechBros description Lorem ipsum dolor sit amet");
-        mechBros.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/0aa6661bc2c769955deaac84e5f6201ad0d7edf4/src/main/images/mech-bros-images/mech-bros.png");
+        mechBros.setUrl("mech-bros-images/mech-bros.png");
         comicRepository.save(mechBros);
 
         Page mbpg1 = new Page();
