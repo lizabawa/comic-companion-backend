@@ -61,49 +61,49 @@ public class SeedData implements CommandLineRunner {
 
         Page rrpg1 = new Page();
         rrpg1.setPageNumber(1);
-        rrpg1.setUrl("src/main/images/red-ranger-images/RedRanger_comic_001.png");
+        rrpg1.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_001.png?raw=true");
         rrpg1.setComic(redRanger);
         pageRepository.save(rrpg1);
 
         Page rrpg2 = new Page();
         rrpg2.setPageNumber(2);
-        rrpg2.setUrl("src/main/images/red-ranger-images/RedRanger_comic_002.png");
+        rrpg2.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_002.png?raw=true");
         rrpg2.setComic(redRanger);
         pageRepository.save(rrpg2);
 
         Page rrpg3 = new Page();
         rrpg3.setPageNumber(3);
-        rrpg3.setUrl("src/main/images/red-ranger-images/RedRanger_comic_003.png");
+        rrpg3.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_003.png?raw=true");
         rrpg3.setComic(redRanger);
         pageRepository.save(rrpg3);
 
         Page rrpg4 = new Page();
         rrpg4.setPageNumber(4);
-        rrpg4.setUrl("src/main/images/red-ranger-images/RedRanger_comic_004.png");
+        rrpg4.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_004.png?raw=true");
         rrpg4.setComic(redRanger);
         pageRepository.save(rrpg4);
 
         Page rrpg5 = new Page();
         rrpg5.setPageNumber(5);
-        rrpg5.setUrl("src/main/images/red-ranger-images/RedRanger_comic_005.png");
+        rrpg5.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_005.png?raw=true");
         rrpg5.setComic(redRanger);
         pageRepository.save(rrpg5);
 
         Page rrpg6 = new Page();
         rrpg6.setPageNumber(6);
-        rrpg6.setUrl("src/main/images/red-ranger-images/RedRanger_comic_006.png");
+        rrpg6.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_006.png?raw=true");
         rrpg6.setComic(redRanger);
         pageRepository.save(rrpg6);
 
         Page rrpg7 = new Page();
         rrpg7.setPageNumber(7);
-        rrpg7.setUrl("src/main/images/red-ranger-images/RedRanger_comic_007.png");
+        rrpg7.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_007.png?raw=true");
         rrpg7.setComic(redRanger);
         pageRepository.save(rrpg7);
 
         Page rrpg8 = new Page();
         rrpg8.setPageNumber(8);
-        rrpg8.setUrl("src/main/images/red-ranger-images/RedRanger_comic_008.png");
+        rrpg8.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/red-ranger-images/RedRanger_comic_008.png?raw=true");
         rrpg8.setComic(redRanger);
         pageRepository.save(rrpg8);
 
