@@ -41,11 +41,6 @@ public class ComicController {
         this.comicService = comicService;
     }
 
-    @GetMapping(path = "/helloworld")
-    public String getHelloWorld() {
-        return comicService.getHelloWorld();
-    }
-
     /**
      * Retrieves a list of all comics.
      *

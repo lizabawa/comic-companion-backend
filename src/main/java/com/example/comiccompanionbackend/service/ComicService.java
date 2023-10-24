@@ -45,10 +45,6 @@ public class ComicService {
         this.pageRepository = pageRepository;
     }
 
-    public String getHelloWorld() {
-        return "Hello World";
-    }
-
     /**
      * Retrieves a list of all comics.
      *
