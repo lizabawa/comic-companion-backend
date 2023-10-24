@@ -116,25 +116,25 @@ public class SeedData implements CommandLineRunner {
 
         Page tspg1 = new Page();
         tspg1.setPageNumber(1);
-        tspg1.setUrl("src/main/images/two-sisters-images/Renowned_p01_01.png");
+        tspg1.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/two-sisters-images/Renowned_p01_01.png?raw=true");
         tspg1.setComic(twoSisters);
         pageRepository.save(tspg1);
 
         Page tspg2 = new Page();
         tspg2.setPageNumber(2);
-        tspg2.setUrl("src/main/images/two-sisters-images/Renowned_p02_01.png");
+        tspg2.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/two-sisters-images/Renowned_p02_01.png?raw=true");
         tspg2.setComic(twoSisters);
         pageRepository.save(tspg2);
 
         Page tspg3 = new Page();
         tspg3.setPageNumber(3);
-        tspg3.setUrl("src/main/images/two-sisters-images/Renowned_p03_06.png");
+        tspg3.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/two-sisters-images/Renowned_p03_06.png?raw=true");
         tspg3.setComic(twoSisters);
         pageRepository.save(tspg3);
 
         Page tspg4 = new Page();
         tspg4.setPageNumber(4);
-        tspg4.setUrl("src/main/images/two-sisters-images/Renowned_p04_04.png");
+        tspg4.setUrl("https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/two-sisters-images/Renowned_p04_04.png?raw=true");
         tspg4.setComic(twoSisters);
         pageRepository.save(tspg4);
 
