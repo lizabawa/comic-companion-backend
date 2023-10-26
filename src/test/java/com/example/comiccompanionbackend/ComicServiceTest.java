@@ -30,13 +30,6 @@ public class ComicServiceTest {
     private PageRepository pageRepository;
 
     @Test
-    public void testGetHelloWorld() {
-        Mockito.when(comicService.getHelloWorld()).thenReturn("Hello World");
-        String result = comicService.getHelloWorld();
-        assertEquals("Hello World", result);
-    }
-
-    @Test
     public void testGetAllComics() {
         Comic comic1 = new Comic(1L, "Comic 1", "Comic 1 Description", "src/main/images/red-ranger-images/red-ranger.png");
         Comic comic2 = new Comic(2L, "Comic 2", "Comic 2 Description", "src/main/images/red-ranger-images/red-ranger.png");

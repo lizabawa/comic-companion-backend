@@ -32,5 +32,4 @@ public interface PageRepository extends JpaRepository<Page, Long> {
      * @return The page with the specified comic ID and page ID, or null if not found.
      */
     Page findByComicIdAndId(Long comicId, Long pageId);
-//    Page findByComicIdAndPageNumber(Long comicId, int pageNumber);
 }
