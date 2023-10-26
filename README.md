@@ -19,7 +19,7 @@ ComicCompanion is a mock portfolio website for a comic artist to display their w
 
 ## Project Approach
 - I used the project management application [Notion](https://www.notion.so/) to keep track of project tasks, important links, and brainstorming ideas
-- ![Notion Project Manager](https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/Notion.png?raw=true)
+![Notion Project Manager](https://github.com/lizabawa/comic-companion-backend/blob/main/src/main/resources/images/Notion.png?raw=true)
 - My approach to this project was to create a bare-bone front end first, then the backend, and then connect the two before completing any additional CSS
 - Before I began any coding, I planned my backend-end out by creating user stories, and ERD diagram, and listing my endpoints.
 
