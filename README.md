@@ -91,3 +91,6 @@ These are the resources that were pivotal in debugging my code.
 - [ChatGPT](https://chat.openai.com/)
 - [W3 Schools](https://www.w3schools.com/)
 - [Devstackr Youtube Video](https://www.youtube.com/watch?v=185uAxYz1dU)
+
+### **Special Acknowledgement**
+- [MouthBreathersGuild](https://mouthbreathersguild.co/) - I'd like to especially thank MouthBreathersGuild for allowing me to use their artwork! Every image is from them and I could not have created such a great UI without it.
